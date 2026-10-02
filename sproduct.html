@@ -20,7 +20,7 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i><span id="cart-count" style="background:#088178;color:#fff;border-radius:50%;padding:2px 7px;font-size:12px;margin-left:3px;">0</span></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
@@ -54,15 +54,15 @@
             <h6 id="pro-brand">Home / T-Shirt</h6>
             <h4 id="pro-name">Men's Fashion T-Shirt</h4>
             <h2 id="pro-price">$139.00</h2>
-            <select>
-                <option>Select Size</option>
-                <option>XL</option>
-                <option>XXL</option>
-                <option>Small</option>
-                <option>Large</option>
-            </select>
-            <input type="number" value="1">
-            <button class="normal">Add To Cart</button>
+            <select id="pro-size">
+  <option value="">Select Size</option>
+  <option>S</option>
+  <option>M</option>
+  <option>L</option>
+  <option>XL</option>
+</select>
+<input type="number" id="pro-qty" value="1" min="1">
+<button class="normal" id="add-to-cart">Add To Cart</button>
             <h4>Product Details</h4>
             <span>The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton.</span>
         </div>
@@ -116,7 +116,20 @@
             <p>© 2021, Tech2 etc - HTML CSS Ecommerce Template</p>
         </div>
     </footer>
+<div id="cart-overlay"></div>
 
+<aside id="cart-drawer">
+  <div class="free-ship">Free Shipping on orders $30!</div>
+  <div class="cart-head">
+    <h3>Your cart</h3>
+    <button id="close-cart">&times;</button>
+  </div>
+  <div class="cart-body">
+    <h4>Your cart is currently empty.</h4>
+    <p>Not sure where to start? Try these collections:</p>
+    <a href="shop.html" class="continue-btn">Continue shopping</a>
+  </div>
+</aside>
     <script src="script.js"></script>
 </body>
 

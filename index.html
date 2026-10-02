@@ -20,7 +20,7 @@
     <li><a href="blog.html">Blog</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
-    <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+<a href="cart.html" id="open-cart"><i class="far fa-shopping-bag"></i></a>
 </ul>
             </div>
             <div id="mobile">
@@ -445,7 +445,22 @@
                 <p>© 2021, Tech2 etc - HTML CSS Ecommerce Template</p>
             </div>
         </footer>
-        <script src="script.js"></script>
-    </body>
+        <div id="cart-overlay"></div>
 
+<aside id="cart-drawer">
+  <div class="free-ship">Free Shipping on orders $30!</div>
+  <div class="cart-head">
+    <h3>Your cart</h3>
+    <button id="close-cart">&times;</button>
+  </div>
+  <div class="cart-body">
+    <h4>Your cart is currently empty.</h4>
+    <p>Not sure where to start? Try these collections:</p>
+    <a href="shop.html" class="continue-btn">Continue shopping</a>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+   
 </html>

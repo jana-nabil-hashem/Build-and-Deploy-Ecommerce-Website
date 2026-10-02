@@ -813,4 +813,42 @@ button.normal {
   footer .copyright {
     text-align: start;
   }
+  #cart-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.5);
+  opacity: 0; visibility: hidden;
+  transition: .3s; z-index: 998;
+}
+#cart-overlay.show { opacity: 1; visibility: visible; }
+
+#cart-drawer {
+  position: fixed; top: 0; right: 0;
+  width: 400px; max-width: 100%; height: 100%;
+  background: #fff;
+  transform: translateX(100%);
+  transition: transform .3s ease;
+  z-index: 999;
+  display: flex; flex-direction: column;
+}
+#cart-drawer.open { transform: translateX(0); }
+
+.free-ship {
+  background: #c92c9b; color: #fff;
+  text-align: center; padding: 14px;
+  font-weight: 600;
+}
+.cart-head {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px; border-bottom: 1px solid #eee;
+}
+.cart-head h3 { font-size: 20px; }
+#close-cart { background: none; border: none; font-size: 32px; cursor: pointer; }
+
+.cart-body { padding: 40px 20px; text-align: center; }
+.cart-body p { color: #666; margin: 10px 0 25px; }
+.continue-btn {
+  display: inline-block; background: #c92c9b; color: #fff;
+  padding: 14px 50px; border-radius: 8px;
+  text-decoration: none; font-weight: 600;
+}
 }
