@@ -30,7 +30,8 @@
 
 #cart table input {
   width: 70px;
-  padding: 10px 5px 10px 15px;
+  padding: 10px 5px;
+  text-align: center;
 }
 #cart table .remove { font-size: 22px; color: #555; }
 #cart table .remove:hover { color: #c0392b; }
@@ -61,4 +62,24 @@
 
 @media (max-width: 799px) {
   #cart-total .box { max-width: 100%; }
+}
+#cart-total button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #088178;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#cart-total button.normal:hover {
+  background-color: #066a63;
+}
+#cart table tbody input[type="number"] {
+  text-align: center;
+  padding: 10px 5px;
 }

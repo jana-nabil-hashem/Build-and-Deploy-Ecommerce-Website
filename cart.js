@@ -1,7 +1,7 @@
 // cart.html: shows the products saved by "Add To Cart"
 // (uses getCart / saveCart / esc from script.js, so script.js must be loaded first)
 
-alert("cart.js loaded: " + localStorage.getItem("cart"));
+
 (function () {
   const tbody = document.getElementById("cart-body");
   if (!tbody) return;
